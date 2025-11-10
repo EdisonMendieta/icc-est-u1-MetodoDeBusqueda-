@@ -25,9 +25,14 @@ public class App {
         ShowConsole show =new ShowConsole();
         show.showPersonResult(resultado, name);
 
-        //busqueda de edad impar mayor a 25
+        //busqueda de la primera edad impar mayor a 25
 
         resultado = mBusqueda.findPersonaByAge(personas,25);
         show.showPersonResult(resultado, 25);
+    
+        //
+        resultado = mBusqueda.findPersonaByValueName(personas,498);
+        boolean valorname = true;
+        show.showPersonResult(resultado, 498,valorname);
     }
 }

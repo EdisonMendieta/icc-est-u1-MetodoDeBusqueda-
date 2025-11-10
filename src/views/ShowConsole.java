@@ -24,6 +24,16 @@ public class ShowConsole {
         );
 
     }
+
+    public void showPersonResult(Persona persona, int i, boolean valorname){
+        System.out.println( 
+            persona !=null
+                    ? "Se encontro a " + persona 
+                    : "no se encontro la persona con " + i
+
+        );
+
+    }
     
     public void printArray(int[] numeros){
         System.out.print("[ ");

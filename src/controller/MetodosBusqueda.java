@@ -85,4 +85,20 @@ public class MetodosBusqueda{
         }
         return null;
     }
+
+    public Persona findPersonaByValueName(Persona[] personas, int i){
+        for (Persona persona : personas) {
+            int valor = 0;
+            for (int j = 0; j < persona.getNombre().length(); j++) {
+                valor += (int) persona.getNombre().charAt(j);
+                
+            }
+            //498
+            if (i == valor) {
+                return persona;
+            }
+            
+        }
+        return null;
+    }
 }
