@@ -1,6 +1,29 @@
 package views;
 
+import models.Persona;
+
 public class ShowConsole {
+
+
+    public void showPersonResult(Persona persona, String name){
+        System.out.println( 
+            persona !=null
+                    ? "Se encontro a " + persona 
+                    : "no se encontro la persona " + name 
+
+        );
+
+    }
+
+    public void showPersonResult(Persona persona, int age){
+        System.out.println( 
+            persona !=null
+                    ? "Se encontro a " + persona 
+                    : "no se encontro la persona " + age
+
+        );
+
+    }
     
     public void printArray(int[] numeros){
         System.out.print("[ ");
